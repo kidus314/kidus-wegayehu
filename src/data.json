@@ -1,28 +1,28 @@
 {
     "navbar": {
-        "logo": "./public/kidusLogo.svg",
+        "logo": "../src/assets/kidusLogo.svg",
       "items": ["Home", "About", "Skills", "Projects", "Contact"]
     },
     "landingPage": {
       "title": "Hi, I'm Kidus Wegayehu",
       "content": ["PCB designer","Embedded Systems Engineer","Electrical Solutions specialist"],
-      "heroImage": "./public/Frame.svg"
+      "heroImage": "public/Frame.svg"
     },
     "aboutMe": {
       "title": "About Me",
       "description": "Hi, I'm Kidus Wegayehu Gurmu, a dedicated PCB designer and electrical engineer. With a keen eye for detail and a passion for innovation, I specialize in creating efficient and high-quality embedded systems that meet modern technological demands. My journey in electronics began with a fascination for how things work, leading me to develop a strong foundation in circuit design, prototyping, and system integration.",
-      "image": "./public/751A2308bwdrem.png"
+      "image": "../src/assets/751A2308bwdrem.png"
     },
     "skills": {
       "title": "Skills",
       "list": [
-        { "name": "Embedded c", "icon": "./public/C.svg" },
-        { "name": "Altium", "icon": "./public/se_logo.svg" },
-        { "name": "Raspberry pi", "icon": "./public/Raspberry Pi.svg" },    
-        { "name": "python", "icon": "./public/Embedded C.svg" },
-        { "name": "ROS", "icon": "./public/Robot Operating System (ROS).svg" },
-        { "name": "Arduino", "icon": "./public/Arduino (1).svg" },
-        { "name": "illustrator", "icon": "./public/Adobe_Illustrator_CC_icon.svg" }
+        { "name": "Embedded c", "icon": "../src/assets/C.svg" },
+        { "name": "Altium", "icon": "../src/assets/se_logo.svg" },
+        { "name": "Raspberry pi", "icon": "../src/assets/Raspberry Pi.svg" },    
+        { "name": "python", "icon": "../src/assets/Embedded C.svg" },
+        { "name": "ROS", "icon": "../src/assets/Robot Operating System (ROS).svg" },
+        { "name": "Arduino", "icon": "../src/assets/Arduino (1).svg" },
+        { "name": "illustrator", "icon": "../src/assets/Adobe_Illustrator_CC_icon.svg" }
         
       ]
     },
@@ -33,39 +33,39 @@
         {
           "name": "SDTMS",
           "description": "A web app built with React and Firebase.",
-          "image": "./public/placeholder.jpg",
+          "image": "../src/assets/placeholder.jpg",
           "github": "https://github.com/yourusername/project-one",
           "website": "https://projectone.com"
         },
         {
           "name": "CleanAir",
           "description": "A portfolio website showcasing my work.",
-          "image": "./public/placeholder.jpg",
+          "image": "../src/assets/placeholder.jpg",
           "github": "https://github.com/yourusername/project-two",
           "website": "https://projecttwo.com"
         },
         {
             "name": "hardware XO",
             "description": "A web app built with React and Firebase.",
-            "image": "./public/placeholder.jpg",
+            "image": "../src/assets/placeholder.jpg",
             "github": "https://github.com/yourusername/project-one",
             "website": "https://projectone.com"
           },{
             "name": "Hospital floor plan",
             "description": "A web app built with React and Firebase.",
-            "image": "./public/placeholder.jpg",
+            "image": "../src/assets/placeholder.jpg",
             "github": "https://github.com/yourusername/project-one",
             "website": "https://projectone.com"
           },{
             "name": "8 Bit AlU",
             "description": "A web app built with React and Firebase.",
-            "image": "./public/placeholder.jpg",
+            "image": "../src/assets/placeholder.jpg",
             "github": "https://github.com/yourusername/project-one",
             "website": "https://projectone.com"
           },{
             "name": "Translator App",
             "description": "A web app built with React and Firebase.",
-            "image": "./public/placeholder.jpg",
+            "image": "../src/assets/placeholder.jpg",
             "github": "https://github.com/yourusername/project-one",
             "website": "https://projectone.com"
           }
@@ -74,9 +74,9 @@
     "contact": {
       "title": "Contact Me",
       "socialLinks": [
-        { "platform": "GitHub", "link": "https://github.com/yourusername", "icon": "./public/github-svgrepo-com.svg" },
-        { "platform": "Telegram", "link": "https://t.me/yourusername", "icon": "./public/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" },
-        { "platform": "LinkedIn", "link": "https://linkedin.com/in/yourusername", "icon": "./public/linkedin-svgrepo-com.svg" }
+        { "platform": "GitHub", "link": "https://github.com/yourusername", "icon": "../src/assets/github-svgrepo-com.svg" },
+        { "platform": "Telegram", "link": "https://t.me/yourusername", "icon": "../src/assets/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" },
+        { "platform": "LinkedIn", "link": "https://linkedin.com/in/yourusername", "icon": "../src/assets/linkedin-svgrepo-com.svg" }
       ],
       "form": {
         "firstName": "First Name",
