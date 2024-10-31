@@ -44,7 +44,7 @@ const AboutMe = () => {
     <section className="about-me">
       <h2 className="about-me-title">{data.aboutMe.title}</h2>
       <div className="about-me-content">
-        <img src={data.aboutMe.image} alt="About me" className="about-me-image" ref={imageRef} />
+        <img src="/public/751A2308.JPG" alt="About me" className="about-me-image" ref={imageRef} />
         <p className="about-me-text">{data.aboutMe.description}</p>
       </div>
     </section>
