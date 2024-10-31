@@ -1,0 +1,54 @@
+/* src/components/Footer.css */
+
+.footer-container {
+    background-color: #0d0d0d;
+    color: var(--text-color);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  .footer-trace {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  .footer-trace svg {
+    display: block;
+  }
+  
+  .trace-path {
+    stroke-dasharray: 1200; /* Match path length */
+    stroke-dashoffset: 0;
+    animation: moveTrace 8s linear infinite; /* Smooth loop */
+  }
+  
+  @keyframes moveTrace {
+    from {
+      stroke-dashoffset: 0;
+    }
+    to {
+      stroke-dashoffset: -1200; /* Same as dasharray for smooth flow */
+    }
+  }
+  
+  .footer-content {
+    padding: 10px 20px;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    color: var(--text-color);
+  }
+  
+  .footer-text a {
+    color: var(--hover-color);
+    text-decoration: none;
+    margin: 0 8px;
+  }
+  
+  .footer-text a:hover {
+    text-decoration: underline;
+  }
+  

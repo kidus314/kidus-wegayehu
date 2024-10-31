@@ -1,0 +1,58 @@
+/* src/components/LandingPage.css */
+* {
+   /* outline: 1px solid red;  */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  
+}
+
+.landing {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    padding: 0 20px;
+    
+  }
+  
+  .landing-content {
+    margin-top: 25vh;
+    max-width: 80vw;
+    text-align: left;
+    color: var(--text-color);
+  }
+  
+  .landing-title {
+    font-size: 56px; /* Set title size to 72px */
+    font-family: var(--font-oxanium);
+    font-weight: 800; /* Extra Bold */
+    margin: 0 0 20px;
+  }
+  
+  .landing-roles {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between each role */
+  }
+  
+  .landing-roles p {
+    font-size: 32px; /* Set role text size to 40px */
+    font-family: var(--font-oxanium);
+    font-weight: 400; /* Regular weight */
+    margin: 0;
+    /* max-width: 400p; */
+
+  }
+  
+  .landing-image {
+    width: 100vw;
+    max-width: 500px;
+    margin-left: 40px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .landing-image:hover {
+    transform: scale(1.05);
+  }
+  

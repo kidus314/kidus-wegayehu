@@ -1,0 +1,61 @@
+/* src/components/Navbar.css */
+
+.navbar {
+   /* Keep navbar at the top */
+  
+  left: 0;
+  right: 0;
+  width: 100vw;
+  max-width: 100vw; /* Prevent overflow */
+  padding: 20px 20px;
+  background-color: var(--bg-color);
+  z-index: 99;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between; /* Space between logo and items */
+  align-items: center;
+  max-width: 100vw; /* Optional: limit width */
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  height: 72px;
+  filter: brightness(0) invert(1); /* Match text color */
+  padding-left: 10px;
+  transition: box-shadow 0.3s ease, filter 0.3s ease; /* Smooth transition */
+}
+
+.navbar-logo:hover {
+  /* Electric blue glow */
+  filter: brightness(1.2); /* Increase brightness slightly */
+}
+
+
+.navbar-list {
+  display: flex;
+  gap: 7px; /* Gap between buttons */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-item button {
+  width: 108px;
+  height: 42px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 24px;
+  font-family: var(--font-oxanium);
+  border: 2px solid transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.navbar-item button:hover {
+  border-color: var(--hover-color);
+}

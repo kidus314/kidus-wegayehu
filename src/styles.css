@@ -1,0 +1,43 @@
+/* src/styles.css */
+:root {
+  /* Colors */
+  --bg-color: #0D0D0D;
+  --text-color: #D4D4D4;
+  --hover-color: #83F0FF;
+  --error-color: #FF3B3B;
+  --success-color: #7DFF7A;
+
+  /* Font */
+  --font-oxanium: 'Oxanium', sans-serif;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-oxanium);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800; /* Extra Bold */
+}
+
+p, span, a, li {
+  font-weight: 400; /* Regular */
+}
+
+strong, b {
+  font-weight: 700; /* Bold */
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
