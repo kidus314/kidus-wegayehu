@@ -1,6 +1,6 @@
 {
     "navbar": {
-        "logo": "/public/kidusLogo.svg",
+        "logo": "public/kidusLogo.svg",
       "items": ["Home", "About", "Skills", "Projects", "Contact"]
     },
     "landingPage": {
