@@ -1,12 +1,12 @@
 {
     "navbar": {
-        "logo": "../src/assets/kidusLogo.svg",
+        "logo": "./src/assets/kidusLogo.svg",
       "items": ["Home", "About", "Skills", "Projects", "Contact"]
     },
     "landingPage": {
       "title": "Hi, I'm Kidus Wegayehu",
       "content": ["PCB designer","Embedded Systems Engineer","Electrical Solutions specialist"],
-      "heroImage": "../src/assets/Frame.svg"
+      "heroImage": "./src/assets/Frame.svg"
     },
     "aboutMe": {
       "title": "About Me",
