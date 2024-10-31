@@ -1,0 +1,7 @@
+# Enforce consistent line endings
+* text=auto
+
+# Force specific line endings for images and binary files
+*.svg binary
+*.png binary
+*.jpg binary
