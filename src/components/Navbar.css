@@ -26,12 +26,19 @@
   height: 72px;
   filter: brightness(0) invert(1); /* Match text color */
   padding-left: 10px;
-  transition: box-shadow 0.3s ease, filter 0.3s ease; /* Smooth transition */
+  color: var(--text-color);
+  /* Smooth transition */
 }
+.bright-mode  .navbar-logo{
+  height: 72px;
+  filter: brightness(0.5) ; /* Match text color */
+  padding-left: 10px;
+  color: var(--text-color);
 
+}
 .navbar-logo:hover {
   /* Electric blue glow */
-  filter: brightness(1.2); /* Increase brightness slightly */
+  filter: brightness(1.1); /* Increase brightness slightly */
 }
 
 

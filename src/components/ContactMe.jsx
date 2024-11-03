@@ -29,8 +29,8 @@ const ContactMe = () => (
           ))}
         </div>
         <div className="contact-details">
-          <p className="contact-detail"><strong>Phone:</strong> +123-456-7890</p>
-          <p className="contact-detail"><strong>Email:</strong> youremail@example.com</p>
+          <p className="contact-detail"><strong>Phone:</strong> +251-984112342</p>
+          <p className="contact-detail"><strong>Email:</strong> kidusweg@gmail.com</p>
         </div>
       </div>
     </div>

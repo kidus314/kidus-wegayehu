@@ -15,10 +15,10 @@ const Projects = () => (
             <p className="project-description">{project.description}</p>
             <div className="project-links">
               <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
-                <img src="../src/assets/github-svgrepo-com.svg" alt="GitHub" className="link-icon" />
+                <img src="/github-svgrepo-com.svg" alt="GitHub" className="link-icon" />
               </a>
               <a href={project.website} target="_blank" rel="noopener noreferrer" className="project-link">
-                <img src="../src/assets/link-svgrepo-com.svg" alt="Website" className="link-icon" />
+                <img src="/web-select-svgrepo-com.svg" alt="Website" className="link-icon" />
               </a>
             </div>
           </div>

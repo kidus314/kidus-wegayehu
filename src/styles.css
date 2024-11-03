@@ -3,14 +3,23 @@
   /* Colors */
   --bg-color: #0D0D0D;
   --text-color: #D4D4D4;
-  --hover-color: #83F0FF;
+  --hover-color: #83F0FF; /* Primary pulse color */
+  --pulse-color-secondary: #FF3B3B; /* Secondary pulse color */
   --error-color: #FF3B3B;
   --success-color: #7DFF7A;
 
   /* Font */
-  --font-oxanium: 'Oxanium', sans-serif;
+  --font-oxanium: 'Oxanium', 'Roboto';
 }
 
+.bright-mode {
+  --bg-color: #F5F5DC;
+  --text-color: #3C3C3C;
+  --hover-color: #067ba9; /* Primary pulse color in bright mode */
+  --pulse-color-secondary: #28A745; /* Secondary pulse color in bright mode */
+  --error-color: #FF3B3B;
+  --success-color: #28A745;
+}
 /* Global Styles */
 body {
   margin: 0;
