@@ -14,9 +14,7 @@
   font-weight: 800;
   color: var(--text-color);
   margin-bottom: 40px;
-  /* position: relative; */
   text-align: center;
-  
 }
 
 .projects-title::after {
@@ -26,7 +24,6 @@
   height: 2px;
   background-color: var(--hover-color);
   position: absolute;
-  /* bottom: -5px; */
   left: 42%; /* Center the underline more precisely */
   transition: width 0.3s ease;
 }
@@ -49,18 +46,18 @@
   height: 400px;
   background-color: #252525;
   border-radius: 15px;
-  overflow: visible; /* Allow underline overflow */
+  overflow: visible;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform-origin: center center; /* Ensure scaling is centered */
+  transform-origin: center center;
   margin: 20px auto;
-  z-index: 0; /* Prevent stacking issues */
+  z-index: 0;
 }
 
 .project-card:hover {
-  transform: scale(1.03); /* Smaller scale to avoid affecting layout */
+  transform: scale(1.03);
   box-shadow: 0 6px 20px rgba(131, 240, 255, 0.3);
-  z-index: 10; /* Bring hovered card to the front */
+  z-index: 10;
 }
 
 .project-image {
@@ -93,8 +90,6 @@
   width: 0;
   height: 2px;
   background-color: var(--hover-color);
-  /* position: absolute; */
-  /* bottom: -3px; */
   left: 0;
   transition: width 0.3s ease;
 }
@@ -126,5 +121,52 @@
 
 .link-icon {
   width: 32px;
-  /* height: 24px; */
+}
+/* Existing desktop styles remain the same */
+/* Add mobile-specific styles */
+@media (max-width: 768px) {
+  /* Ensure title is fully visible at the top */
+  .projects-container {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    display: flex;
+    flex-direction: column; /* Stack title above cards */
+    padding: 20px 10px;
+    gap: 10px;
+  }
+
+  .projects-title {
+    font-size: 32px; /* Smaller title size */
+    margin-bottom: 20px;
+    text-align: center; /* Center title at the top */
+    position: static; /* Static positioning to avoid overlap */
+  }
+
+  /* Cards in a horizontal scrolling layout */
+  .projects-grid {
+    display: flex;
+    gap: 15px;
+    justify-content: start;
+    justify-items: center;
+    overflow-x: scroll;
+    padding-bottom: 20px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .project-card {
+    min-width: 250px;
+    height: auto;
+    scroll-snap-align: center;
+    transition: transform 0.2s ease;
+  }
+
+  /* Enhance the hover effect */
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+
+  /* Hide the links for simplicity on mobile */
+  .project-links {
+    display: none;
+  }
 }

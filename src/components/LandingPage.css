@@ -1,58 +1,100 @@
 /* src/components/LandingPage.css */
 * {
-   /* outline: 1px solid red;  */
   overflow-x: hidden; /* Prevent horizontal scroll */
-  
 }
 
 .landing {
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    min-height: 100vh;
-    background-color: var(--bg-color);
-    padding: 0 20px;
-    
-  }
-  
-  .landing-content {
-    margin-top: 25vh;
-    max-width: 80vw;
-    text-align: left;
-    color: var(--text-color);
-  }
-  
-  .landing-title {
-    font-size: 56px; /* Set title size to 72px */
-    font-family: var(--font-oxanium);
-    font-weight: 800; /* Extra Bold */
-    margin: 0 0 20px;
-  }
-  
-  .landing-roles {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    gap: 10px; /* Space between each role */
-  }
-  
-  .landing-roles p {
-    font-size: 32px; /* Set role text size to 40px */
-    font-family: var(--font-oxanium);
-    font-weight: 400; /* Regular weight */
-    margin: 0;
-    /* max-width: 400p; */
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding: 0 20px;
+}
 
+.landing-content {
+  margin-top: 25vh;
+  max-width: 80vw;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.landing-title {
+  font-size: 56px;
+  font-family: var(--font-oxanium);
+  font-weight: 800;
+  margin: 0 0 20px;
+}
+
+.landing-roles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.landing-roles p {
+  font-size: 32px;
+  font-family: var(--font-oxanium);
+  font-weight: 400;
+  margin: 0;
+}
+
+.landing-image {
+  width: 100vw;
+  max-width: 500px;
+  margin-left: 40px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.landing-image:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .landing {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: auto;
+    margin-top: 84px;
   }
-  
+
+  .landing-content {
+    margin-top: 20px;
+    text-align: center; /* Center-align content */
+    max-width: 90vw;
+  }
+
+  .landing-title {
+    
+    font-size: 40px; /* Reduce title size on smaller screens */
+  }
+
+  .landing-roles p {
+    font-size: 24px; /* Reduce role text size */
+  }
+
   .landing-image {
-    width: 100vw;
-    max-width: 500px;
-    margin-left: 40px;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+    width: 80vw; /* Adjust image width */
+    max-width: 300px;
+    margin-left: 0;
+    margin-top: 20px; /* Add spacing above the image */
   }
-  
-  .landing-image:hover {
-    transform: scale(1.05);
+}
+
+/* Further adjustments for extra-small screens */
+@media (max-width: 480px) {
+  .landing-title {
+    font-size: 32px; /* Further reduce title size */
   }
-  
+
+  .landing-roles p {
+    font-size: 20px; /* Reduce role text size on extra-small screens */
+  }
+
+  .landing-image {
+    width: 70vw; /* Adjust image width for small screens */
+    max-width: 250px;
+  }
+}

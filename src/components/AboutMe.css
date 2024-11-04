@@ -23,8 +23,9 @@
   gap: 80px;
 }
 
+/* Image container styling */
 .about-me-image-container {
- top: 35px;
+  top: 35px;
   position: relative;
   width: 320px;
   height: auto;
@@ -35,12 +36,12 @@
 
 /* Image styling */
 .about-me-image {
-  width: 97%; /* Slightly smaller image */
+  width: 97%;
   height: auto;
   margin-top: 4px;
   margin-left: 4px;
   border-radius: 20px;
-  z-index: 2; /* Ensures image is above the blob */
+  z-index: 2;
   position: relative;
   transition: box-shadow 1s ease-in-out;
 }
@@ -48,15 +49,14 @@
 /* Blob animation */
 .about-me-blob {
   position: absolute;
-  z-index: 1; /* Blob is behind the image */
- 
+  z-index: 1;
   width: 400px;
   height: 400px;
   border-radius: 25px;
-  background-color:var(--hover-color); /* Primary blob color */
+  background-color: var(--hover-color);
   opacity: 0.8;
   filter: blur(12px);
-  transform: translate(-50%, -50%); /* Center the blob */
+  transform: translate(-50%, -50%);
   animation: blob-bounce 8s infinite ease;
 }
 
@@ -74,4 +74,65 @@
   font-family: var(--font-oxanium);
   line-height: 1.6;
   color: var(--text-color);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .about-me-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px; /* Reduced gap */
+  }
+
+  .about-me-title {
+    font-size: 42px; /* Smaller title font */
+  }
+
+  .about-me-image-container {
+    width: 80vw; /* Scale image container to viewport width */
+    max-width: 250px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3), -15px -20px 15px rgba(0, 0, 0, 0);
+  }
+
+  .about-me-blob {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-me-image {
+    width: 95%; /* Adjusted for mobile */
+    max-width: 240px;
+  }
+
+  .about-me-text {
+    font-size: 20px; /* Smaller font size for text */
+    max-width: 90vw; /* Adjust max-width for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me-title {
+    font-size: 36px; /* Further reduce font size */
+  }
+
+  .about-me-image-container {
+    width: 90vw;
+    max-width: 200px;
+  }
+
+  .about-me-blob {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-me-image {
+    width: 90%;
+  }
+
+  .about-me-text {
+    font-size: 18px;
+    text-align: left;
+    padding: 20px;
+  }
 }
