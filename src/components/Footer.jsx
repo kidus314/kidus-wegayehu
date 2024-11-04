@@ -14,7 +14,7 @@ const Footer = () => (
       </svg>
     </div>
     <div className="footer-content">
-      <p className="footer-text">© 2024 All Rights Reserved | Built with passion for technology</p>
+      <p className="footer-text">© 2024 All Rights Reserved | Built with passion </p>
     </div>
   </footer>
 );

@@ -32,51 +32,51 @@
       "list": [
         {
           "name": "SDTMS",
-          "description": "A web app built with React and Firebase.",
+          "description": "A remote and realtime distribution transformer monitoring hardware system with a machine learning and web interface.",
           "image": "/placeholder.jpg",
-          "github": "https://github.com/yourusername/project-one",
+          "github": "https://github.com/eyosiasbitsu/Transfomera",
           "website": "https://projectone.com"
         },
         {
           "name": "CleanAir",
-          "description": "A portfolio website showcasing my work.",
+          "description": "A realtime air quality monitoring hardware with a web interface",
           "image": "/placeholder.jpg",
-          "github": "https://github.com/yourusername/project-two",
-          "website": "https://projecttwo.com"
+          "github": "https://github.com/eyosiasbitsu/Air-quality-Monitoring",
+          "website": "https://cleanAir.live"
         },
         {
             "name": "hardware XO",
-            "description": "A web app built with React and Firebase.",
+            "description": "hardware based tic tac toe game with different levels also Ai oponent implemented on AVR microcontrollers",
             "image": "/placeholder.jpg",
-            "github": "https://github.com/yourusername/project-one",
-            "website": "https://projectone.com"
+            "github": "https://github.com/kidus314/tic-tac-toe-4k",
+            "website": "#"
           },{
             "name": "Hospital floor plan",
-            "description": "A web app built with React and Firebase.",
+            "description": "A 6 storey hospital electrical installation design done using AUTOCAD ",
             "image": "/placeholder.jpg",
-            "github": "https://github.com/yourusername/project-one",
-            "website": "https://projectone.com"
+            "github": "#",
+            "website": "#"
           },{
             "name": "8 Bit AlU",
-            "description": "A web app built with React and Firebase.",
+            "description": "8 bit Arithemetic and logic unit done using Proteus ",
             "image": "/placeholder.jpg",
-            "github": "https://github.com/yourusername/project-one",
-            "website": "https://projectone.com"
+            "github": "#",
+            "website": "#"
           },{
             "name": "Translator App",
-            "description": "A web app built with React and Firebase.",
+            "description": "A dictionary app to translate english to Amharic using android studio-java",
             "image": "/placeholder.jpg",
-            "github": "https://github.com/yourusername/project-one",
-            "website": "https://projectone.com"
+            "github": "#",
+            "website": "#"
           }
       ]
     },
     "contact": {
       "title": "Contact Me",
       "socialLinks": [
-        { "platform": "GitHub", "link": "https://github.com/yourusername", "icon": "/github-svgrepo-com.svg" },
-        { "platform": "Telegram", "link": "https://t.me/yourusername", "icon": "/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" },
-        { "platform": "LinkedIn", "link": "https://linkedin.com/in/yourusername", "icon": "/linkedin-svgrepo-com.svg" }
+        { "platform": "GitHub", "link": "https://github.com/kidus314", "icon": "/github-svgrepo-com.svg" },
+        { "platform": "Telegram", "link": "https://t.me/kidus_7", "icon": "/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" },
+        { "platform": "LinkedIn", "link": "inkedin.com/in/kidus-wegayehu-5271a727b", "icon": "/linkedin-svgrepo-com.svg" }
       ],
       "form": {
         "firstName": "First Name",
