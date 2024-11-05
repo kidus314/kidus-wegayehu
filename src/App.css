@@ -1,107 +1,30 @@
 /* App.css */
 
-/* Dark Mode (Default) */
-:root {
-    --bg-color: #0D0D0D;
-    --text-color: #D4D4D4;
-    --hover-color: #83F0FF;
-    --error-color: #FF3B3B;
-    --success-color: #7DFF7A;
-  }
-  
-  /* Light Mode */
-  
-  
-  /* Apply background and text color from variables */
-  body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-  }
-  
-  /* Floating Theme Toggle Button */
-  .theme-toggle-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    border: 2px solid var(--text-color);
-    border-radius: 50px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    z-index: 1000;
-  }
-  
-  .theme-toggle-btn:hover {
-    background-color: #25a9f6b7;
-    /* color:var(--bg-color); */
-    transform: scale(1.05);
-  }
-  
-  /* Bright Mode Adjustments */
-.bright-mode .contact-container {
-    background-color: rgba(245, 245, 220, 0.9); /* Light, slightly warm background */
-  }
-  
-  .bright-mode .contact-card {
-    background: rgba(255, 255, 255, 0.8); /* Lighter glass effect */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for bright mode */
-  }
-  
-  .bright-mode .form-input,
-  .bright-mode .form-textarea {
-    background-color: rgba(0, 0, 0, 0.05); /* Light frosted effect */
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border for bright mode */
-  }
-  
-  .bright-mode .submit-button {
-    background-color: var(--hover-color);
-    color: #FFFFFF;
-  }
-  
-  .bright-mode .submit-button:hover {
-    background-color: var(--success-color);
-    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.3); /* Adjusted hover shadow */
-  }
-  
-  .bright-mode .contact-title, 
-  .bright-mode .social-title {
-    color: var(--hover-color); /* Ensures hover color contrast remains strong */
-  }
-  
-  .bright-mode .contact-detail {
-    color: var(--text-color);
-  }
-  
-  .bright-mode .social-link:hover .social-icon {
-    filter: none; /* Full color in bright mode */
-  }
-  .bright-mode .project-card  {
-    background-color: #ffffff; /* Light background */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
-  }
-  
-  .bright-mode .project-card:hover {
-    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3); /* Softer blue shadow on hover */
-  }
-
-  /* Bright Mode Adjustments */
-.bright-mode .footer-container {
-  background-color: #f5f5dc; /* Light background for bright mode */
-  color: var(--text-color); /* Text color from bright mode theme */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+  overflow: visible;
 }
 
-.bright-mode .footer-trace .trace-path {
-  stroke: var(--hover-color); /* Adjust line color for bright mode */
+.theme-toggle-btn, .cv-button {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  text-align: center;
 }
 
-.bright-mode .footer-text {
-  color: var(--text-color); /* Adapt text color for bright mode */
-}
-
-.bright-mode .footer-text a {
-  color: var(--hover-color); /* Link color in bright mode */
+.theme-toggle-btn:hover, .cv-button:hover {
+  background-color: #25a9f6b7;
+  transform: scale(1.05);
 }

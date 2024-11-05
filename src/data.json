@@ -33,39 +33,39 @@
         {
           "name": "SDTMS",
           "description": "A remote and realtime distribution transformer monitoring hardware system with a machine learning and web interface.",
-          "image": "/placeholder.jpg",
+          "image": "/SDTMS.png",
           "github": "https://github.com/eyosiasbitsu/Transfomera",
           "website": "https://projectone.com"
         },
         {
           "name": "CleanAir",
           "description": "A realtime air quality monitoring hardware with a web interface",
-          "image": "/placeholder.jpg",
+          "image": "/cleanAir.png",
           "github": "https://github.com/eyosiasbitsu/Air-quality-Monitoring",
           "website": "https://cleanAir.live"
         },
         {
             "name": "hardware XO",
             "description": "hardware based tic tac toe game with different levels also Ai oponent implemented on AVR microcontrollers",
-            "image": "/placeholder.jpg",
+            "image": "/hardware-xo.png",
             "github": "https://github.com/kidus314/tic-tac-toe-4k",
             "website": "#"
           },{
             "name": "Hospital floor plan",
             "description": "A 6 storey hospital electrical installation design done using AUTOCAD ",
-            "image": "/placeholder.jpg",
+            "image": "/hospital_floor.png",
             "github": "#",
             "website": "#"
           },{
             "name": "8 Bit AlU",
             "description": "8 bit Arithemetic and logic unit done using Proteus ",
-            "image": "/placeholder.jpg",
+            "image": "/8bit-Alu.png",
             "github": "#",
             "website": "#"
           },{
             "name": "Translator App",
             "description": "A dictionary app to translate english to Amharic using android studio-java",
-            "image": "/placeholder.jpg",
+            "image": "/eng-amh.png",
             "github": "#",
             "website": "#"
           }

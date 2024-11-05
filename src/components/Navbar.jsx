@@ -1,9 +1,11 @@
 // src/components/Navbar.jsx
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';  // Import PropTypes
 import data from '../data.json';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ scrollToSection, refs }) => {
+  const { landingRef, aboutRef, skillsRef, projectsRef, contactRef } = refs;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -46,7 +48,16 @@ const Navbar = () => {
         <ul className="navbar-list">
           {data.navbar.items.map((item, index) => (
             <li key={index} className="navbar-item">
-              <button>{item}</button>
+              <button onClick={() => {
+                closeMenu();
+                if (item === 'Home') scrollToSection(landingRef);
+                else if (item === 'About') scrollToSection(aboutRef);
+                else if (item === 'Skills') scrollToSection(skillsRef);
+                else if (item === 'Projects') scrollToSection(projectsRef);
+                else if (item === 'Contact') scrollToSection(contactRef);
+              }}>
+                {item}
+              </button>
             </li>
           ))}
         </ul>
@@ -55,7 +66,14 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="navbar-dropdown">
             {data.navbar.items.map((item, index) => (
-              <div key={index} className="navbar-dropdown-item" onClick={toggleMenu}>
+              <div key={index} className="navbar-dropdown-item" onClick={() => {
+                toggleMenu();
+                if (item === 'Home') scrollToSection(landingRef);
+                else if (item === 'About') scrollToSection(aboutRef);
+                else if (item === 'Skills') scrollToSection(skillsRef);
+                else if (item === 'Projects') scrollToSection(projectsRef);
+                else if (item === 'Contact') scrollToSection(contactRef);
+              }}>
                 {item}
               </div>
             ))}
@@ -64,6 +82,18 @@ const Navbar = () => {
       </div>
     </nav>
   );
+};
+
+// Define PropTypes for Navbar
+Navbar.propTypes = {
+  scrollToSection: PropTypes.func.isRequired,
+  refs: PropTypes.shape({
+    landingRef: PropTypes.object.isRequired,
+    aboutRef: PropTypes.object.isRequired,
+    skillsRef: PropTypes.object.isRequired,
+    projectsRef: PropTypes.object.isRequired,
+    contactRef: PropTypes.object.isRequired,
+  }).isRequired,
 };
 
 export default Navbar;
