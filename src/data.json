@@ -1,7 +1,7 @@
 {
     "navbar": {
         "logo": "/kidusLogo.svg",
-      "items": ["Home", "About", "Skills", "Projects", "Contact"]
+      "items": ["Home", "About", "Skills", "Projects", "Contact","Admin"]
     },
     "landingPage": {
       "title": "Hi, I'm Kidus Wegayehu",
@@ -87,6 +87,7 @@
     },
     "footer": {
       "text": "© 2024 All Rights Reserved."
-    }
+    },
+    "response":{"token":""}
   }
   

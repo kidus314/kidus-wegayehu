@@ -1,12 +1,14 @@
 // src/components/Navbar.jsx
 import { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';  // Import PropTypes
+import PropTypes from 'prop-types'; 
+import { useNavigate } from 'react-router-dom';
 import data from '../data.json';
 import './Navbar.css';
 
 const Navbar = ({ scrollToSection, refs }) => {
   const { landingRef, aboutRef, skillsRef, projectsRef, contactRef } = refs;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate(); // Initialize navigate
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -34,6 +36,16 @@ const Navbar = ({ scrollToSection, refs }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  const handleNavigation = (item) => {
+    closeMenu();
+    if (item === 'Home') scrollToSection(landingRef);
+    else if (item === 'About') scrollToSection(aboutRef);
+    else if (item === 'Skills') scrollToSection(skillsRef);
+    else if (item === 'Projects') scrollToSection(projectsRef);
+    else if (item === 'Contact') scrollToSection(contactRef);
+    else if (item === 'Admin') navigate('/login'); // Navigate to login for Admin
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-content">
@@ -48,14 +60,7 @@ const Navbar = ({ scrollToSection, refs }) => {
         <ul className="navbar-list">
           {data.navbar.items.map((item, index) => (
             <li key={index} className="navbar-item">
-              <button onClick={() => {
-                closeMenu();
-                if (item === 'Home') scrollToSection(landingRef);
-                else if (item === 'About') scrollToSection(aboutRef);
-                else if (item === 'Skills') scrollToSection(skillsRef);
-                else if (item === 'Projects') scrollToSection(projectsRef);
-                else if (item === 'Contact') scrollToSection(contactRef);
-              }}>
+              <button onClick={() => handleNavigation(item)}>
                 {item}
               </button>
             </li>
@@ -66,14 +71,7 @@ const Navbar = ({ scrollToSection, refs }) => {
         {isMenuOpen && (
           <div className="navbar-dropdown">
             {data.navbar.items.map((item, index) => (
-              <div key={index} className="navbar-dropdown-item" onClick={() => {
-                toggleMenu();
-                if (item === 'Home') scrollToSection(landingRef);
-                else if (item === 'About') scrollToSection(aboutRef);
-                else if (item === 'Skills') scrollToSection(skillsRef);
-                else if (item === 'Projects') scrollToSection(projectsRef);
-                else if (item === 'Contact') scrollToSection(contactRef);
-              }}>
+              <div key={index} className="navbar-dropdown-item" onClick={() => handleNavigation(item)}>
                 {item}
               </div>
             ))}
