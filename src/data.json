@@ -35,7 +35,7 @@
           "description": "A remote and realtime distribution transformer monitoring hardware system with a machine learning and web interface.",
           "image": "/SDTMS.png",
           "github": "https://github.com/eyosiasbitsu/Transfomera",
-          "website": "https://projectone.com"
+          "website": "https://transfomera.vercel.app/"
         },
         {
           "name": "CleanAir",
@@ -54,19 +54,19 @@
             "name": "Hospital floor plan",
             "description": "A 6 storey hospital electrical installation design done using AUTOCAD ",
             "image": "/hospital_floor.png",
-            "github": "#",
+            "github": "https://github.com/kidus314/Hospital-floor_plan",
             "website": "#"
           },{
             "name": "8 Bit AlU",
             "description": "8 bit Arithemetic and logic unit done using Proteus ",
             "image": "/8bit-Alu.png",
-            "github": "#",
+            "github": "https://github.com/kidus314/8bit_Alu",
             "website": "#"
           },{
             "name": "Translator App",
             "description": "A dictionary app to translate english to Amharic using android studio-java",
             "image": "/eng-amh.png",
-            "github": "#",
+            "github": "https://github.com/kidus314/Translator-App.git",
             "website": "#"
           }
       ]
@@ -76,7 +76,7 @@
       "socialLinks": [
         { "platform": "GitHub", "link": "https://github.com/kidus314", "icon": "/github-svgrepo-com.svg" },
         { "platform": "Telegram", "link": "https://t.me/kidus_7", "icon": "/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" },
-        { "platform": "LinkedIn", "link": "inkedin.com/in/kidus-wegayehu-5271a727b", "icon": "/linkedin-svgrepo-com.svg" }
+        { "platform": "LinkedIn", "link": "https://www.linkedin.com/in/kidus-wegayehu-5271a727b/", "icon": "/linkedin-svgrepo-com.svg" }
       ],
       "form": {
         "firstName": "First Name",
