@@ -34,7 +34,10 @@ const Admin = () => {
   return (
     <div className="admin-container">
       <h2 className="admin-heading">Admin - Messages</h2>
-      {error && <p className="error-message">{error}</p>}
+    
+     {/* {error && <p className="error-message">{error}</p>} */}
+
+    
       <div className="messages-list">
         {messages.length === 0 ? (
           <p>No messages available.</p>
