@@ -24,7 +24,7 @@ const ContactMe = () => {
     e.preventDefault();
     
     try {
-      const response = await fetch('http://localhost:3000/messages', {
+      const response = await fetch('https://kidus-wegayehu.onrender.com/messages', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

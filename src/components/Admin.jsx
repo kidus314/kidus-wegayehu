@@ -16,7 +16,7 @@ const Admin = () => {
     const fetchMessages = async () => {
       try {
         const token = localStorage.getItem('token'); // Get token from localStorage
-        const response = await axios.get('http://localhost:3000/messages', {
+        const response = await axios.get('https://kidus-wegayehu.onrender.com/messages', {
           headers: {
             Authorization: `Bearer ${token}`, // Include token in request headers
           },
